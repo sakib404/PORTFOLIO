@@ -226,7 +226,6 @@ section {
   flex-direction: column;
   justify-content: center;
   padding-right: 18rem;
-  padding-bottom: 160px;
   position: relative;
 }
 .header-content .right-header .name {
@@ -728,7 +727,7 @@ section {
   /* margin-left: -400px; */
   display: flex;
   align-items: center;
-  justify-content: start;
+  justify-content: start  ;
   width: 100%;
 }
 
