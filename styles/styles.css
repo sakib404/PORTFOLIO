@@ -226,6 +226,8 @@ section {
   flex-direction: column;
   justify-content: center;
   padding-right: 18rem;
+  padding-bottom: 160px;
+  position: relative;
 }
 .header-content .right-header .name {
   font-size: 3rem;
@@ -665,11 +667,13 @@ section {
 
 /*Independed components*/
 .btn-con {
-  position: relative;
+  /* position: relative; */
   display: flex;
+  justify-content: start;
   /* align-self: flex-start; */
   align-items: center;
   flex-direction: column;
+  gap: 4rem;
 }
 
 .main-btn {
@@ -683,6 +687,7 @@ section {
   align-items: center;
   overflow: hidden;
 }
+
 .main-btn .btn-text {
   padding: 0 2rem;
 }
@@ -715,31 +720,24 @@ section {
   transition: all 0.4s ease-out;
 }
 
-.main-btn-wrapper {
-  position: absolute; /* Set the wrapper to absolute position */
-  top: calc(100% + 10px); /* Position it below the main button */
-  left: 50%; /* Position it horizontally centered */
-  transform: translateX(-50%); /* Adjust horizontally to center */
-}
-
 .social-links {
   /* position: absolute;
   display: flex;
   align-items: center;
   margin-top: 100px; /* Adjust margin between the first and last links */
   /* margin-left: -400px; */
-  position: relative; /* Set the social links container to absolute position */
-  top: 100%; /* Position it below the first link */
-  left: 50%; /* Position it horizontally centered */
-  transform: translateX(-50%); /* Adjust horizontally to center */
   display: flex;
   align-items: center;
-  margin-top: 100px; /* Adjust margin between the first and last links */
-  margin-left: -200px;
+  justify-content: start;
+  width: 100%;
 }
 
 .social-links .main-btn {
   margin-right: 10px; /* Adjust margin between the social links */
+}
+
+.social-links .btn-con {
+  justify-content: center;
 }
 
 /* Additional styles for the blank circle button */
@@ -853,7 +851,6 @@ section {
   }
 
   .right-header {
-    position: relative;
     grid-row: 1;
     padding-right: 0rem !important;
     width: 90%;
@@ -1062,7 +1059,6 @@ section {
   }
 
   .right-header {
-    position: relative;
     grid-row: 1;
     padding-right: 0rem !important;
     width: 90%;
