@@ -442,6 +442,23 @@ section {
   text-align: center;
 }
 
+.green-underline {
+  color: #27AE60;
+  display: inline-block; /* Set to inline-block to limit the width of the element to its content */
+  position: relative;
+}
+
+.green-underline::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #27AE60;
+}
+
+
 .portfolios {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

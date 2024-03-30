@@ -22,6 +22,30 @@
     })
 })();
 
+document.addEventListener("DOMContentLoaded", function() {
+    // Get references to the buttons
+    const everythingBtn = document.getElementById("everything-btn");
+    const mobileBtn = document.getElementById("mobile-btn");
+    const webBtn = document.getElementById("web-btn");
+
+    // Add click event listeners to the buttons
+    everythingBtn.addEventListener("click", function() {
+        const everythingSection = document.querySelector(".portfolios[data-id='Everything']");
+        everythingSection.scrollIntoView({ behavior: "smooth", block: "start" });
+    });
+
+    mobileBtn.addEventListener("click", function() {
+        const mobileSection = document.querySelector(".portfolios[data-id='Mobile']");
+        mobileSection.scrollIntoView({ behavior: "smooth", block: "start" });
+    });
+
+    webBtn.addEventListener("click", function() {
+        const webSection = document.querySelector(".portfolios[data-id='Web']");
+        webSection.scrollIntoView({ behavior: "smooth", block: "start" });
+    });
+});
+
+
 const cursorDot = document.querySelector("[data-cursor-dot]");
 const cursorOutline = document.querySelector("[data-cursor-outline]");
 
