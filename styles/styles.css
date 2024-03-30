@@ -759,8 +759,8 @@ section {
 /* Additional styles for the blank circle button */
 .blank-circle .btn-icon {
   background-color: transparent; /* Transparent background */
-  border: 1px solid var(--color-secondary); /* Green border */
-  transition: background-color 0.4s ease-in;
+  border: 1.5px solid var(--color-secondary); /* Green border */
+  transition: background-color 0.2s ease-in;
 }
 
 .main-btn + .blank-circle {
@@ -815,7 +815,7 @@ section {
 }
 
 .blank-circle .btn-icon i {
-  font-size: 1.2rem; /* Adjust icon size */
+  font-size: 1.5rem; /* Adjust icon size */
 }
 
 .main-title {
