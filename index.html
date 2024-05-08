@@ -13,6 +13,7 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" 
     rel="stylesheet">
+    <link rel="shortcut icon" href="img/web icon.png">
 </head>
 <body class="main-content">
 
@@ -278,9 +279,17 @@
             <p class="port-text">
                 Here is some of the work that I've done.
             </p>
-            <h1 class="green-underline" style="color: #ffffff;">Mobile App Design</h1>
+
+            <div class="selection-bar">
+                <div class="selection-item" data-filter="all">All</div>
+                <div class="selection-item" data-filter="app">App Design</div>
+                <div class="selection-item" data-filter="web">Website Design</div>
+                <div class="selection-item" data-filter="logo">Logo</div>
+                <div class="selection-item" data-filter="others">Others</div>
+            </div>
+
             <div class="portfolios">
-                <div class="portfolio-item">
+                <div class="portfolio-item app-dis" data-category="app">
                     <div class="image">
                         <img src="img/port2.jpg" alt="">
                     </div>
@@ -296,7 +305,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="portfolio-item">
+                <div class="portfolio-item app-dis" data-category="app">
                     <div class="image">
                         <img src="img/port4.jpg" alt="">
                     </div>
@@ -312,7 +321,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="portfolio-item">
+                <div class="portfolio-item app-dis" data-category="app">
                     <div class="image">
                         <img src="img/port6.jpg" alt="">
                     </div>
@@ -328,10 +337,7 @@
                         </div>
                     </div>
                 </div>
-            </div> <br> <br> <br>   
-            <h1 class="green-underline" style="color: #ffffff;">Web Design</h1>
-            <div class="portfolios">
-                <div class="portfolio-item">
+                <div class="portfolio-item web-dis" data-category="web">
                     <div class="image">
                         <img src="img/port5.jpg" alt="">
                     </div>
@@ -347,14 +353,10 @@
                         </div>
                     </div>
                 </div>
-            </div> <br> <br> <br>
-            <h1 class="green-underline" style="color: #ffffff;">Logo Design</h1>
-            <div class="portfolios">
-                <h1>Ongoing Project....</h1>
-            </div> <br> <br> <br>
-            <h1 class="green-underline" style="color: #ffffff;">Others</h1>
-            <div class="portfolios">
-                <div class="portfolio-item">
+                <div class="portfolio-item logo-dis" data-category="logo">
+                    <h1>Ongoing Project....</h1>
+                </div>
+                <div class="portfolio-item others-dis" data-category="others">
                     <div class="image">
                         <img src="img/port1.png" alt="">
                     </div>
@@ -373,7 +375,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="portfolio-item">
+                <div class="portfolio-item others-dis" data-category="others">
                     <div class="image">
                         <img src="img/port3.jpg" alt="">
                     </div>
@@ -391,8 +393,8 @@
                             </a>
                         </div>
                     </div>
-                </div>  
-            </div>
+                </div> 
+            </div>  
         </section>
         
         <section class="container" id="blogs">
@@ -455,7 +457,7 @@
                                 <p>
                                     <span>: BSc in SWE at 
                                         <a href="https://www.iutoic-dhaka.edu/">
-                                            <span style="color: #27AE60;"><b>IUT</b></span>
+                                            <span style="color: var(--color-secondary);"><b>IUT</b></span>
                                         </a>
                                     </span>
                                 </p>

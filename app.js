@@ -46,6 +46,34 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
+document.addEventListener("DOMContentLoaded", function() {
+    const selectionItems = document.querySelectorAll('.selection-item');
+    const portfolioItems = document.querySelectorAll('.portfolio-item');
+
+    selectionItems.forEach(item => {
+        item.addEventListener('click', function() {
+            const filter = this.getAttribute('data-filter');
+
+            selectionItems.forEach(i => i.classList.remove('active'));
+            this.classList.add('active');
+
+            portfolioItems.forEach(portfolioItem => {
+                if (filter === 'all') {
+                    portfolioItem.style.display = 'block'; // Show all items
+                } else {
+                    // Check if portfolio item matches the filter category
+                    if (portfolioItem.getAttribute('data-category') === filter) {
+                        portfolioItem.style.display = 'block';
+                    } else {
+                        portfolioItem.style.display = 'none';
+                    }
+                }
+            });
+        });
+    });
+});
+
+
 const cursorDot = document.querySelector("[data-cursor-dot]");
 const cursorOutline = document.querySelector("[data-cursor-outline]");
 
