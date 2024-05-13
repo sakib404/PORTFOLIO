@@ -47,15 +47,15 @@ body {
 }
 
 .cursor-dot {
-  width: 7px;
-  height: 7px;
+  width: 8px;
+  height: 8px;
   background-color: rgb(31, 202, 59);
 }
 
 .cursor-outline {
   width: 40px;
   height: 40px;
-  border: 2px solid hsla(98, 78%, 32%, 0.5);
+  border: 2px solid hsla(98, 80%, 38%, 0.603);
 }
 
 .cursor-dot, .cursor-outline {
@@ -64,7 +64,7 @@ body {
   left: 0;
   transform: translate(-50%, -50%);
   border-radius: 50%;
-  z-index: 9999;
+  z-index: 10000;
   pointer-events: none;
 }
 
@@ -618,7 +618,7 @@ section {
   font-size: 1.5rem;
   margin-bottom: 0.7rem;
   transition: all 0.4s ease-in-out;
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 .blogs .blog .blog-text h4:hover {
   color: var(--color-secondary);
